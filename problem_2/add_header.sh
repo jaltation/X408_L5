@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 
 
+set -x
 files_i_care_about=( $(ls *.c))
 
-for t in ${!files_i_care_about[@]}; do
+for t in ${files_i_care_about[@]}; do
     echo '**Propety of Blaa.co 1882**' | cat - $t > temp && mv temp $t
 done
