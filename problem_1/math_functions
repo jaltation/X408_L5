@@ -3,6 +3,6 @@
 
 function add_two_numbers () {
 
-	 let ret_val=$1+$2
+	 let ret_val=$((1+2))
 	 echo $ret_val
 }
